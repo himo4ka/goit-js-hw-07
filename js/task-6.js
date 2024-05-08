@@ -26,6 +26,7 @@ const destroyButton = controls.querySelector('[data-destroy]');
 const input = controls.querySelector('input');
 
 createButton.addEventListener('click', () => {
+  destroyBoxes();
   createBoxes(input.value);
 });
 
