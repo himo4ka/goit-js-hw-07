@@ -37,4 +37,5 @@ createButton.addEventListener('click', () => {
 
 destroyButton.addEventListener('click', () => {
   destroyBoxes();
+  input.value = "";
 });
