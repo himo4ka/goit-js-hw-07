@@ -4,6 +4,11 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 function createBoxes(amount) {
+  if (amount < 1 || amount > 100) {
+    alert("Uncorrect number");
+    input.value = "";
+    return;
+  }
   for (let i = 0; i < amount; i++) {
     const div = document.createElement('div');
     div.style.width = `${30 + i * 10}px`;

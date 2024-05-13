@@ -5,6 +5,7 @@ const userName = {
 userName.input.addEventListener('input', onInputListener);
 
 function onInputListener(event) {
-    userName.output.textContent = event.currentTarget.value || 'Anonymous';
+    const trimmedValue = userName.input.value.trim();
+    userName.output.textContent = trimmedValue === '' ? 'Anonymous' : trimmedValue;
 
 };
